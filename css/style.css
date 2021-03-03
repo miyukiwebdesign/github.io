@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/*
+GENERAL STYLING
+================================================ */
+html {
+    font-size: 100%;
+}
+body {
+	color: #ddd;
+	font-family: sans-serif;
+}
+
+/*
+COMMON
+================================================ */
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+p {
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*
+HERO
+================================================ */
+.hero {
+    background-image: url(../images/fat-plants-2477825_1920.jpg);
+    background-color: #b3d0d7;
+    padding-top: 10vh;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+/*
+MENU
+================================================ */
+.menu {
+    background-image: url(../images/fleshy-in-this-3399492_1920.jpg);
+    background-color: #b3d0d7;
+    display: flex;
+    align-items: center;
+    background-blend-mode: multiply;
+}
+.wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.wrapper h2 {
+    font-size: 4rem;
+}
+
+.menu-list tr {
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+    line-height: 1.7;
+}
+.menu-list th {
+    font-weight: normal;
+}
+.menu-list td {
+    padding-left: 1rem;
+}
+
+/*
+CONTACT
+================================================ */
+.contact {
+    background-image: url(../images/composition-succulent-plant-2683689_1920.jpg);
+    background-color: #82aaaa;
+    text-align: center;
+    padding-top: 8vh;
+    background-blend-mode: multiply;
+}
+.btn {
+    background: #888;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2rem 0 2.25rem;
+}
+.btn:hover {
+    background: #b3d0d7;
+}
+.contact-sns {
+    display: flex;
+    justify-content: center;
+}
+.contact-sns a {
+    background: #fff;
+    width: 3.75rem;
+    height: 3.75rem;
+    display: inline-block;
+    margin: 0 .5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: .75rem 0 0 .125rem;
+    color: #82aaaa;
+}
+.contact-sns a:hover {
+    background: rgba(179,208,215,.8);
+}
+
+/*
+MOBILE SIZE
+================================================ */
+@media (max-width: 700px) {
+    .title {
+        font-size: 4rem;
+    }
+    p {
+        padding: 0 1rem;
+    }
+    p,
+    .menu-list li {
+        font-size: 1rem;
+    }
+    .hero {
+        padding-top: 12vh;
+    }
+}
